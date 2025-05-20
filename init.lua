@@ -116,6 +116,9 @@ vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 
+-- Block cursor
+vim.opt.guicursor = ''
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
