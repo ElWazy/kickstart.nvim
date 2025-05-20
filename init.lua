@@ -105,6 +105,11 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- netrw config
+vim.g.netrw_browse_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
