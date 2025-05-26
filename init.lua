@@ -31,6 +31,7 @@ I hope you enjoy your Neovim journey,
 --]]
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.g.python3_host_prog = '/home/elwazy/.virtualenvs/py3nvim/bin/python'
 
 -- disable languajes
 vim.g.loaded_perl_provider = 0
