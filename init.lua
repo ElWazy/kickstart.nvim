@@ -99,7 +99,7 @@ vim.o.inccommand = 'split'
 
 vim.o.cursorline = true
 
-vim.o.scrolloff = 10
+vim.o.scrolloff = 8
 
 vim.o.confirm = true
 
@@ -142,6 +142,13 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'move up page and center' })
 vim.keymap.set('n', 'n', 'nzzzv', { desc = 'search next ocurrence and center' })
 vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'search previus ocurrence and center' })
 
+-- pastes without lose reference
+vim.keymap.set('x', '<leader>p', [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+vim.keymap.set('n', '<leader>Y', [["+Y]])
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -182,8 +189,6 @@ rtp:prepend(lazypath)
 --    :Lazy update
 --
 require('lazy').setup({
-  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
-
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
