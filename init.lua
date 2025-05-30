@@ -135,6 +135,13 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- usefull centers cursors
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'move down page and center' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'move up page and center' })
+
+vim.keymap.set('n', 'n', 'nzzzv', { desc = 'search next ocurrence and center' })
+vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'search previus ocurrence and center' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
