@@ -906,6 +906,19 @@ require('lazy').setup({
       "echasnovski/mini.pick",         -- optional
       "folke/snacks.nvim",             -- optional
     },
+    keys = {
+      {
+        "<leader>gs",
+        function()
+          require('neogit').open({ kind = "split" })
+        end,
+        desc = "Neogit Status"
+      },
+    },
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+    opts = {},
   }
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
