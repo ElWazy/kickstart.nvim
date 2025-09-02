@@ -901,6 +901,10 @@ require('lazy').setup({
       "sindrets/diffview.nvim",
       "nvim-telescope/telescope.nvim",
     },
+    opts = {
+      disable_hint = true,
+      disable_context_highlighting = true,
+    },
     keys = {
       {
         "<leader>gs",
