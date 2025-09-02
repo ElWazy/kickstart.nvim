@@ -904,6 +904,10 @@ require('lazy').setup({
     opts = {
       disable_hint = true,
       disable_context_highlighting = true,
+      disable_insert_on_commit = true,
+      commit_editor = {
+        spell_check = false,
+      }
     },
     keys = {
       {
